@@ -1,0 +1,175 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    width: 100%;
+    height: 100vh;
+}
+.navbar{
+    width: 80%;
+    margin: auto;
+}
+.navdiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+.logo a img{
+    width: 80%;
+}
+.navbar .navdiv ul li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .navdiv ul li a{
+    font-size: 16px;
+    color: rgba(23, 40, 47, 1);
+    font-weight: bold;
+    margin-right: 25px;
+}
+.navbar .navdiv ul li a:hover{
+    color: rgba(0, 206, 201, 1);
+}
+.navbar .navdiv ul li span{
+    color: rgba(0, 206, 201, 1);
+}
+.navbar .navdiv ul li span:hover{
+    color: rgba(23, 40, 47, 1);
+}
+.navbar .navdiv button{
+    background-color: rgba(0, 184, 148, 1);
+    border: none;
+    border-radius: 8px;
+    padding: 10px 25px;
+    text-align: center;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.navbar .navdiv button:hover{
+    background-color: rgba(237, 237, 235, 1);
+}
+.navbar .navdiv button a{
+    font-size: 16px;
+    color: #ffff;
+    font-weight: bold;
+}
+.navbar .navdiv button a:hover{
+    color: rgba(0, 184, 148, 1);
+}
+/*  */
+.container{
+    width: 80%;
+    margin: auto;
+}
+.container .sub-menu{
+    width: 55%;
+    height: 230px;
+    /* background-color: green; */
+    display: flex;
+}
+.container .sub-menu .logo-icon{
+    width: 40%;
+    height: 130px;
+    /* background-color:red; */
+    margin-top: 3rem;
+}
+.container .sub-menu .logo-icon img{
+    width: 80%;
+}
+.container .sub-menu .company-name{
+    width: 60%;
+    /* background-color: blue; */
+    margin-top: 3rem;
+    margin-left: 2rem;
+}
+.container .sub-menu .company-name h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+.container .sub-menu .company-name p{
+    font-size: 20px;
+    margin-top: 5px;
+}
+.container .sub-menu .company-name p span{
+    margin-left: 15px;
+}
+.container .sub-menu .company-name button{
+    background-color: rgba(0, 184, 148, 1);
+    border: none;
+    border-radius: 8px;
+    padding: 12px 32px;
+    text-align: center;
+    margin: 25px 2px;
+    cursor: pointer;
+}
+.container .sub-menu .company-name button:hover{
+    background-color: rgba(237, 237, 235, 1);
+}
+.container .sub-menu .company-name button a{
+    font-size: 14px;
+    color: #ffff;
+    font-weight: bold;
+}
+.container .sub-menu .company-name button a:hover{
+    color: rgba(0, 184, 148, 1);
+}
+/*  */
+.content-container{
+    width: 80%;
+    height: 1350px;
+    margin: auto;
+}
+.content-container .content p{
+    font-size: 16px;
+    color: rgba(0, 0, 0, 1);
+    text-align: justify;
+    line-height: 25px;
+}
+.content-container .content h5{
+    padding: 10px 0px 8px 0px;
+}
+.content-container .content ul li{
+    list-style: none;
+}
+
+/* .ordered-list li{
+    width: 80%;
+    margin: auto;
+} */
+
+
+/* Footer */
+footer{
+    width: 100%;
+    height: 50vh;
+    background: rgba(0, 91, 73, 1);
+}
+footer .footer-container{
+    width: 80%;
+    margin: auto;
+    padding-top: 50px;
+}
+footer .footer-container .logo img{
+    width: 4%;
+    padding-bottom: 25px;
+}
+.identity{
+    width: 20%;
+}
+.identity h6{
+    font-size: 14px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+    padding-bottom: 10px;
+}
+.identity p{
+    font-size: 14px;
+    color: rgba(255, 255, 255, 1);
+    line-height: 18px;
+    text-align: left;
+}
