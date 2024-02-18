@@ -1,312 +1,612 @@
-* {
-    padding: 0;
-    margin: 0;
-    font-family: 'poppins', sans-serif;
-    box-sizing: border-box;
-    text-decoration: none;
-}
-body{
+    * {
+        padding: 0;
+        margin: 0;
+        font-family: 'poppins', sans-serif;
+        box-sizing: border-box;
+        text-decoration: none;
+    }
+    
+    body {
+        width: 100%;
+        height: 100vh;
+    }
+    /* Landing Page */
+    
+    .mainContainer {
+        width: 100%;
+        height: 105vh;
+        background: linear-gradient(179.84deg, #82D4C9 -158.45%, rgba(130, 212, 201, 0) 104.55%);
+    }
+    
+    .mainContainer .sub-container {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        justify-content: flex-end;
+        gap: 40px;
+        padding-top: 20px;
+    }
+    /* Header */
+    
+    .sub-container ul {
+        display: flex;
+        justify-content: flex-end;
+        list-style: none;
+        gap: 40px;
+        padding-top: 15px;
+        cursor: pointer;
+    }
+    
+    .sub-container ul li a {
+        font-size: 16px;
+        font-weight: bold;
+        color: rgba(23, 40, 47, 1);
+    }
+    
+    .sub-container ul li a:hover {
+        color: rgba(0, 206, 201, 1);
+    }
+    
+    .sub-container ul li span {
+        color: rgba(0, 206, 201, 1);
+    }
+    
+    .sub-container ul li span:hover {
+        color: rgba(23, 40, 47, 1);
+    }
+    
+    .sub-container button {
+        background-color: rgba(0, 184, 148, 1);
+        border: none;
+        border-radius: 8px;
+        padding: 7px 15px;
+        text-align: center;
+        display: inline-block;
+        margin: 4px 0px;
+        cursor: pointer;
+    }
+    
+    .sub-container button:hover {
+        background-color: rgba(0, 184, 148, 0.1);
+    }
+    
+    .sub-container button a {
+        font-size: 16px;
+        font-weight: bold;
+        color: #ffff;
+    }
+    
+    .sub-container button a:hover {
+        color: rgba(0, 184, 148, 1);
+    }
+    
+    .btn-menu {
+        display: none;
+    }
+    
+    .bx-menu {
+        font-size: 40px;
+        cursor: pointer;
+    }
+    
+    .close {
+        display: block;
+        position: absolute;
+        right: 25px;
+        top: 20px;
+    }
+    
+    .bx-x {
+        font-size: 40px;
+        cursor: pointer;
+    }
+    
+    #dropDownList {
+        display: none;
+        position: absolute;
+        top: 0;
+        background: #82D4C9;
+        width: 100%;
+        height: 70vh;
+        margin: auto;
+    }
+    /* #dropDown {
     width: 100%;
-    height: 100vh;
-}
-/* Landing Page */
-.mainContainer{
-    width: 100%;
-    height: 105vh;
-    background: linear-gradient(179.84deg, #82D4C9 -158.45%, rgba(130, 212, 201, 0) 104.55%);
-}
-.mainContainer .sub-container{
-    width: 90%;
-    margin: auto;
-    display: flex;
-    justify-content: flex-end;
-    gap: 40px;
-    padding-top: 20px;
-}
-/* Header */
-.sub-container ul{
-    display: flex;
-    justify-content: flex-end;
-    list-style: none;
-    gap: 50px;
-    padding-top: 15px;
-    cursor: pointer;
-}
-.sub-container ul li a{
-    font-size: 16px;
-    font-weight: bold;
-    color: rgba(23, 40, 47, 1);
-}
-.sub-container ul li a:hover{
-    color: rgba(0, 206, 201, 1);
-}
-.sub-container ul li span{
-    color: rgba(0, 206, 201, 1);
-}
-.sub-container ul li span:hover{
-    color: rgba(23, 40, 47, 1);
-}
-.sub-container button{
-    background-color: rgba(0, 184, 148, 1);
-    border: none;
-    border-radius: 8px;
-    padding: 10px 25px;
-    text-align: center;
-    display: inline-block;
-    margin: 4px 2px;
-    cursor: pointer;
-}
-.sub-container button:hover{
-    background-color: rgba(237, 237, 235, 1);
-}
-.sub-container button a{
-    font-size: 16px;
-    font-weight: bold;
-    color: #ffff;
-}
-.sub-container button a:hover{
-    color: rgba(0, 184, 148, 1);
-}
-/* Header Sub-Section */
-.mainContainer .sub-main{
-    width: 90%; 
-    margin: auto;
-    display: flex;
-    justify-content: space-around;
-    padding-top: 5rem;
-}
-.mainContainer .sub-main .left{
- width: 40%;   
-}
-.mainContainer .sub-main .left h2{
-    font-size:50px;
-    color: rgba(23, 40, 47, 1);
-}
-.mainContainer .sub-main .left h2 span{
-    color: rgba(0, 184, 148, 1);
-}
-.mainContainer .sub-main .left p{
-    font-size: 16px;
-    text-align: justify;
-    text-justify: inter-word;
-    color: rgba(39, 62, 71, 1);
-    padding-top: 2rem;
-}
-.mainContainer .sub-main .left .btn{
-    padding-top: 2.5rem;
-}
-.mainContainer .sub-main .left .btn .btn-1{
-    background-color: rgba(0, 184, 148, 1);
-    border: none;
-    border-radius: 8px;
-    color: white;
-    padding: 12px 35px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 12px;
-    font-weight: bold;
-    cursor: pointer;
-}
-.mainContainer .sub-main .left .btn .btn-2{
-    background-color: rgba(39, 62, 71, 1);
-    border: none;
-    border-radius: 8px;
-    color: white;
-    padding: 12px 50px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 12px;
-    font-weight: bold ;
-    margin-left: 20px;
-    cursor: pointer;
-}
-.mainContainer .sub-main .right{
-    width: 60%;
-}
-.mainContainer .sub-main .right img{
-    width: 60%;
-    margin-left: 17.5rem;
-}
-.mainContainer .box, .second-main .sub-heading, .sale-container .subtitle{
-    display: flex;
+    display: block;
     justify-content: center;
-    align-items: center;
-    margin-top: 10%;
-}
-.mainContainer .box p{
-    font-size: 22px;
-    position: absolute;
-    margin-top: -9%;
-    color: rgb(39, 62, 71);
-    font-weight: 700;
-}
-.mainContainer .box .btn-search{
-    width: 800px;
-    height: 50px;
-    background-color: white;
-    border-style: solid;
-    border-width: 2px;
-    border-radius: 7px;
-    box-shadow: 1px 1px 1px 4px rgba(0, 0, 0, 0.08);
-    display: flex;
-    align-items: center;
-    padding: 20px;
-}
-.mainContainer .box .btn-search > i{
-    font-size: 20px;
-    color: #777;
-}
-.mainContainer .box .btn-search > input{
-    flex: 1;
-    height: 40px;
-    border: none;
-    font-size: 18px;
-    padding-left: 12px;
-}
-/*  */
-.second-main{
-    width: 100%;
-    height: 78vh;
-    margin: auto;
-}
-.second-main .sub-heading h3{
-    font-size: 22px;
-    position: absolute;
-    margin-top: -5%;
-    color: rgb(39, 62, 71);
-    font-weight: 700;
-}
-.sub-heading p{
-    font-size: 12px;
-    color: rgba(23, 40, 47, 1);
-}
-.second-main .departments{
-   width: 93%;
-   margin: auto;
-   height: 220px;
-   /* background-color: green; */
-   display: flex;
-   justify-content: space-around;
-   margin-top: 4rem;
-}
-.second-main .departments .office{
-    width: 24%;
-    height: 220px;
-    /* background-color: red;  */
-}
-.second-main .departments .office .image{
-    width: 90%;
-    height: 70px;
-    /* background-color: blue; */
-    text-align: center;
-}
-.second-main .departments .office .image .img{
-    width: 20%;
-    padding: 50px;
-}
-.second-main .departments .office .title{
-    width: 90%;
-    height: 150px;
-    /* background-color: yellow; */
-    text-align: center;
-    padding: 10px; 
-}
-.second-main .departments .office .title h5{
-    font-size: 14px;
-    font-weight: 800;
-    color: rgba(0, 91, 73, 1);
-    margin-bottom: 7.5px;
-}
-.second-main .departments .office .title p{
-    font-size: 12px;
-    color: rgba(51, 83, 95, 1);
-}
-
-/*  */
-.sale-container{
-    width: 90%;
-    height: 70vh;
-    margin: auto;
-}
-.sale-container .subtitle h3{
-    font-size: 25px;
-    font-weight: 700;
-    color:rgba(0, 0, 0, 1);
-}
-.sale-container .sales{
-    width: 100%;
-    margin: auto;
-    height: 350px;
-    /* background-color: green; */
-    display: flex;
-    justify-content: space-around;
-    margin-top: 3rem;
-}
-.sale-container .sales .sale-1 .sale-image, .sale-container .sales .sale-1 .sale-image1{
-    width: 75%;
-    margin: auto;
-    height: 350px;
-    background: rgba(237, 237, 235, 1);
-    text-align: center;
-    border-radius: 10px;
-}
-.sale-container .sales .sale-1 .sale-image1{
-    background: rgba(245, 255, 254, 1);
-}
-.sale-container .sales .sale-1 .sale-image img, .sale-container .sales .sale-1 .sale-image1 img{
-    width: 100%;
-    object-fit: contain;
-    border-radius: 10px;
-}
-.sale-container .sales .sale-1 .sale-image h5, .sale-container .sales .sale-1 .sale-image1 h5{
-    font-size: 14px;
-    font-weight: 700;
-    color: rgba(51, 83, 95, 1);
-    margin: 1rem;
-}
-.sale-container .sales .sale-1 .sale-image p, .sale-container .sales .sale-1 .sale-image1 p{
-    font-size: 12px;
-    color: rgba(0, 0, 0, 1);
-    text-align: center;
-    padding: 0px 10px 16px 10px;
-}
-.sale-container .sales .sale-1 .sale-image a, .sale-container .sales .sale-1 .sale-image1 a{
-    font-size: 12px;
-    font-weight: 700;
-    text-decoration: none;
-    color: rgba(130, 212, 201, 1);
-}
-/*Footer*/
-footer{
-    width: 100%;
-    height: 50vh;
-    background: rgba(0, 91, 73, 1);
-}
-footer .foot-container{
-    width: 90%;
-    margin: auto;
-    padding-top: 40px;
-}
-footer .foot-container .logo img{
-    width: 3%;
-    padding-bottom: 25px;
-}  
-footer .foot-container .identity h6, 
-footer .foot-container .identity p{
-    font-size: 12px;
-    color: rgba(255, 255, 255, 1);
-    padding-bottom: 10px;
-}
-footer .foot-container .channels{
-    width: 100%;
-    display: flex;
-    margin-top: 5.5rem;
-}
-footer .foot-container .channels img{
-    width: 1.2%;
-}
-footer .foot-container .channels .vec{
-    margin-left: 5rem;
-}
+} */
+    
+    #dropDownList ul {
+        width: 80%;
+        margin: auto;
+        display: block;
+        justify-content: center;
+        list-style: none;
+        cursor: pointer;
+    }
+    
+    #dropDownList ul li {
+        margin: 40px auto;
+    }
+    
+    #dropDownList ul li a {
+        color: rgba(23, 40, 47, 1);
+        font-weight: 800;
+    }
+    
+    #dropDownList button {
+        background-color: rgba(0, 184, 148, 1);
+        border: none;
+        border-radius: 8px;
+        padding: 10px 10px;
+        cursor: pointer;
+        width: 80%;
+        margin: auto;
+        display: block;
+        justify-content: start;
+        margin-top: 4%;
+    }
+    
+    #dropDownList button a {
+        font-size: 16px;
+        font-weight: bold;
+        color: #ffff;
+    }
+    /* Header Sub-Section */
+    
+    .mainContainer .sub-main {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+        padding-top: 5rem;
+    }
+    
+    .mainContainer .sub-main .left {
+        width: 40%;
+    }
+    
+    .mainContainer .sub-main .left h2 {
+        font-size: 50px;
+        color: rgba(23, 40, 47, 1);
+    }
+    
+    .mainContainer .sub-main .left h2 span {
+        color: rgba(0, 184, 148, 1);
+    }
+    
+    .mainContainer .sub-main .left p {
+        font-size: 16px;
+        text-align: justify;
+        line-height: 25px;
+        text-justify: inter-word;
+        color: rgba(39, 62, 71, 1);
+        padding-top: 2rem;
+    }
+    
+    .mainContainer .sub-main .left .btn {
+        padding-top: 2.5rem;
+    }
+    
+    .mainContainer .sub-main .left .btn .btn-1 {
+        background-color: rgba(0, 184, 148, 1);
+        border: none;
+        border-radius: 8px;
+        color: white;
+        padding: 12px 35px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 12px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    
+    .mainContainer .sub-main .left .btn .btn-2 {
+        background-color: rgba(39, 62, 71, 1);
+        border: none;
+        border-radius: 8px;
+        color: white;
+        padding: 12px 50px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 12px;
+        font-weight: bold;
+        margin-left: 20px;
+        cursor: pointer;
+    }
+    
+    .mainContainer .sub-main .right {
+        width: 60%;
+    }
+    
+    .mainContainer .sub-main .right img {
+        width: 60%;
+        margin-left: 17.5rem;
+    }
+    
+    .mainContainer .box,
+    .second-main .sub-heading,
+    .sale-container .subtitle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10%;
+    }
+    
+    .mainContainer .box p {
+        font-size: 22px;
+        position: absolute;
+        margin-top: -9%;
+        color: rgb(39, 62, 71);
+        font-weight: 700;
+    }
+    
+    .mainContainer .box .btn-search {
+        width: 800px;
+        height: 50px;
+        background-color: white;
+        border-style: solid;
+        border-width: 2px;
+        border-radius: 7px;
+        box-shadow: 1px 1px 1px 4px rgba(0, 0, 0, 0.08);
+        display: flex;
+        align-items: center;
+        padding: 20px;
+    }
+    
+    .mainContainer .box .btn-search>i {
+        font-size: 20px;
+        color: #777;
+    }
+    
+    .mainContainer .box .btn-search>input {
+        flex: 1;
+        height: 40px;
+        border: none;
+        font-size: 18px;
+        padding-left: 12px;
+    }
+    /*  */
+    
+    .second-main {
+        width: 100%;
+        height: 78vh;
+        margin: auto;
+    }
+    
+    .second-main .sub-heading h3 {
+        font-size: 22px;
+        position: absolute;
+        margin-top: -5%;
+        color: rgb(39, 62, 71);
+        font-weight: 700;
+    }
+    
+    .sub-heading p {
+        font-size: 12px;
+        color: rgba(23, 40, 47, 1);
+    }
+    
+    .second-main .departments {
+        width: 93%;
+        margin: auto;
+        height: 220px;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 4rem;
+    }
+    
+    .second-main .departments .office {
+        width: 24%;
+        height: 220px;
+    }
+    
+    .second-main .departments .office .image {
+        width: 90%;
+        height: 70px;
+        text-align: center;
+    }
+    
+    .second-main .departments .office .image .img {
+        width: 20%;
+        padding: 50px;
+    }
+    
+    .second-main .departments .office .title {
+        width: 90%;
+        height: 150px;
+        text-align: center;
+        padding: 10px;
+    }
+    
+    .second-main .departments .office .title h5 {
+        font-size: 14px;
+        font-weight: 800;
+        color: rgba(0, 91, 73, 1);
+        margin-bottom: 7.5px;
+    }
+    
+    .second-main .departments .office .title p {
+        font-size: 12px;
+        color: rgba(51, 83, 95, 1);
+        line-height: 18px;
+    }
+    /*  */
+    
+    .sale-container {
+        width: 90%;
+        height: 70vh;
+        margin: auto;
+    }
+    
+    .sale-container .subtitle h3 {
+        font-size: 25px;
+        font-weight: 700;
+        color: rgba(0, 0, 0, 1);
+    }
+    
+    .sale-container .sales {
+        width: 100%;
+        margin: auto;
+        height: 350px;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 3rem;
+    }
+    
+    .sale-container .sales .sale-1 .sale-image,
+    .sale-container .sales .sale-1 .sale-image1 {
+        width: 75%;
+        margin: auto;
+        height: 350px;
+        background: rgba(237, 237, 235, 1);
+        text-align: center;
+        border-radius: 10px;
+    }
+    
+    .sale-container .sales .sale-1 .sale-image1 {
+        background: rgba(245, 255, 254, 1);
+    }
+    
+    .sale-container .sales .sale-1 .sale-image img,
+    .sale-container .sales .sale-1 .sale-image1 img {
+        width: 100%;
+        object-fit: contain;
+        border-radius: 10px;
+    }
+    
+    .sale-container .sales .sale-1 .sale-image h5,
+    .sale-container .sales .sale-1 .sale-image1 h5 {
+        font-size: 14px;
+        font-weight: 700;
+        color: rgba(51, 83, 95, 1);
+        margin: 1rem;
+    }
+    
+    .sale-container .sales .sale-1 .sale-image p,
+    .sale-container .sales .sale-1 .sale-image1 p {
+        font-size: 12px;
+        color: rgba(0, 0, 0, 1);
+        line-height: 20px;
+        text-align: center;
+        padding: 0px 10px 8px 10px;
+    }
+    
+    .sale-container .sales .sale-1 .sale-image a,
+    .sale-container .sales .sale-1 .sale-image1 a {
+        font-size: 12px;
+        font-weight: 700;
+        text-decoration: none;
+        color: rgba(130, 212, 201, 1);
+    }
+    /*Footer*/
+    
+    footer {
+        width: 100%;
+        height: 50vh;
+        background: rgba(0, 91, 73, 1);
+    }
+    
+    footer .foot-container {
+        width: 90%;
+        margin: auto;
+        padding-top: 40px;
+    }
+    
+    footer .foot-container .logo img {
+        width: 3%;
+        padding-bottom: 25px;
+    }
+    
+    footer .foot-container .identity h6,
+    footer .foot-container .identity p {
+        font-size: 12px;
+        line-height: 18px;
+        color: rgba(255, 255, 255, 1);
+        padding-bottom: 10px;
+    }
+    
+    footer .foot-container .channels {
+        width: 100%;
+        display: flex;
+        margin-top: 5.2rem;
+    }
+    
+    footer .foot-container .channels img {
+        width: 1.2%;
+    }
+    
+    footer .foot-container .channels .vec {
+        margin-left: 5rem;
+    }
+    /* Media Query*/
+    
+    @media only screen and (max-width: 1024px) {
+        .btn-menu {
+            display: block;
+        }
+        .sub-container ul,
+        .sub-container button {
+            display: none;
+        }
+        .mainContainer {
+            height: 80vh;
+        }
+        .mainContainer .sub-main {
+            width: 80%;
+            margin: auto;
+            display: block;
+        }
+        .mainContainer .sub-main .left {
+            width: 100%;
+            margin-top: -10%;
+        }
+        .mainContainer .sub-main .left h2 {
+            font-size: 30px;
+            text-align: center;
+        }
+        .mainContainer .sub-main .left p {
+            font-size: 12px;
+            text-align: center;
+            margin-top: -6%;
+        }
+        .mainContainer .sub-main .left .btn {
+            padding-top: 2rem;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .mainContainer .sub-main .left .btn .btn-1 {
+            font-size: 10px;
+            padding: 8px 18px;
+        }
+        .mainContainer .sub-main .left .btn .btn-2 {
+            font-size: 10px;
+            padding: 8px 35px;
+        }
+        .mainContainer .sub-main .right {
+            visibility: hidden;
+        }
+        .mainContainer .box {
+            margin-top: -7%;
+        }
+        .mainContainer .box p {
+            font-size: 20px;
+            margin-top: -5rem;
+        }
+        .mainContainer .box .btn-search {
+            width: 300px;
+            margin-top: 1.5rem;
+        }
+        .mainContainer .box .btn-search>i {
+            font-size: 18px;
+        }
+        .mainContainer .box .btn-search input {
+            font-size: 14px;
+        }
+        /* DEPARTMENT */
+        .second-main {
+            width: 90%;
+            margin: auto;
+            height: 100vh;
+        }
+        .second-main .sub-heading h3 {
+            font-size: 20px;
+            margin: 30px 0px 75px 0px;
+        }
+        .sub-heading p {
+            margin-bottom: 3rem;
+            margin-top: 3.5rem;
+        }
+        .second-main .departments {
+            width: 93%;
+            margin: auto;
+            height: 550px;
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-column-gap: 1px;
+            grid-row-gap: 1px;
+        }
+        .second-main .departments .office {
+            width: 95%;
+            height: 150px;
+        }
+        .second-main .departments .office .image {
+            width: 95%;
+            height: 80px;
+        }
+        .second-main .departments .office .image .img {
+            width: 2%;
+            padding: 10px 10px;
+        }
+        .second-main .departments .office .title {
+            width: 95%;
+            height: 160px;
+            padding: 1px 10px;
+        }
+        .second-main .departments .office .title h5 {
+            font-size: 12px;
+        }
+        .second-main .departments .office .title p {
+            font-size: 10px;
+            line-height: 16px;
+        }
+        /* SALES */
+        .sale-container {
+            height: 70vh;
+            margin-top: 38rem;
+        }
+        .sale-container .subtitle h3 {
+            font-size: 20px;
+        }
+        .sale-container .sales {
+            margin-top: 1.5rem;
+        }
+        .sale-container .sales .sale-1 .sale-image,
+        .sale-container .sales .sale-1 .sale-image1 {
+            width: 70%;
+            height: 330px;
+        }
+        .sale-container .sales .sale-1 .sale-image h5,
+        .sale-container .sales .sale-1 .sale-image1 h5 {
+            font-size: 12px;
+            margin-bottom: 5px;
+            margin-top: 5px;
+        }
+        .sale-container .sales .sale-1 .sale-image p,
+        .sale-container .sales .sale-1 .sale-image1 p {
+            font-size: 10px;
+            padding: 0px 10px 5px 10px;
+        }
+        .sale-container .sales .sale-1 .sale-image a,
+        .sale-container .sales .sale-1 .sale-image1 a {
+            font-size: 10px;
+        }
+        /* FOOTER */
+        footer {
+            height: 55vh;
+        }
+        footer .foot-container {
+            padding-top: 20px;
+        }
+        footer .foot-container .logo img {
+            width: 5%;
+            padding-bottom: 23px;
+        }
+        footer .foot-container .identity h6,
+        footer .foot-container .identity p {
+            font-size: 10px;
+        }
+        footer .foot-container .channels {
+            margin-top: 1.5rem;
+        }
+        footer .foot-container .channels img {
+            width: 2%;
+        }
+        footer .foot-container .channels .vec {
+            margin-left: 3rem;
+        }
+    }

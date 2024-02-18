@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up Page</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="./signup.css">
+</head>
+
+<body>
+    <div class="signup-container">
+        <fieldset>
+            <legend>Sign Up</legend>
+
+            <form id="signupInput" action="signup.html">
+                <label class="data" for="name">Name:</label>
+                <input id="name" class="data-input" name="name" type="name" placeholder="John Smith"><br>
+
+                <label class="data" for="email">Email:</label>
+                <input id="email" class="data-input" name="email" type="email" placeholder="john@example.com"><br>
+
+                <label class="data" for="number">Phone No:</label>
+                <input id="number" class="data-input" name="number" type="tel" placeholder="08034569877"><br>
+
+                <label class="data" for="password">Password:</label>
+                <input id="password" class="data-input" name="password" type="password" placeholder="At least 8 characters"><br>
+
+                <input id="box" name="checkbox" type="checkbox" required>By creating an account, you agree to the <a href="#">Terms & Conditions</a><br>
+
+                <button id="bnt" type="submit" onclick="openPopup()">Creat an Account</button>
+            </form>
+        </fieldset>
+
+        <!-- Modal Popup -->
+        <div class="popup" id="popup">
+            <i class='bx bxs-check-circle'></i>
+            <!-- <img src="./IMG/check-circle-solid-24.png" alt=""> -->
+            <h2>Congratulations!</h2>
+            <p>You have successfully created your account.</p>
+            <button type="button" onclick="closePopup()">OK</button>
+        </div>
+    </div>
+</body>
+
+<script src="signup.js">
+</script>
+
+</html>
