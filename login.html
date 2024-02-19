@@ -17,13 +17,19 @@
             <legend>Login</legend>
 
             <form id="loginInput" action="login.html">
-                <label class="data" for="email">User Name:</label><br>
-                <input id="email" class="data-input" name="username" type="text" placeholder="User name"><br>
+                <div class="error">
+                    <label class="data" for="email">User Name:</label><br>
+                    <input id="email" class="data-input" name="username" type="text" placeholder="User name"><br>
+                    <p id="usernameError" class="display-error"></p>
+                </div>
 
-                <label class="data" for="password">Password:</label><br>
-                <input id="password" class="data-input" name="password" type="password" placeholder="At least 8 characters"><br>
+                <div class="error">
+                    <label class="data" for="password">Password:</label><br>
+                    <input id="password" class="data-input" name="password" type="password" placeholder="At least 8 characters"><br>
+                    <p id="passwordError" class="display-error"></p>
+                </div>
 
-                <button id="bnt" type="submit" onclick="openPopup()"><a href="./login.html">Submit</a></button>
+                <button id="bnt" type="submit">Submit</button>
             </form>
         </fieldset>
 
@@ -32,11 +38,10 @@
             <i class='bx bxs-check-circle'></i>
             <h2>Welcome Back!</h2>
             <p>You are logged in successfully.</p>
-            <button type="button" onclick="closePopup()">OK</button>
+            <!-- <button type="button" onclick="closePopup()">OK</button> -->
+            <a href="index.html" onclick="closePopup()">OK</a>
         </div>
     </div>
-
-
 
 </body>
 
