@@ -556,8 +556,9 @@
         }
         /* SALES */
         .sale-container {
-            height: 200vh;
+            height: 180vh;
             margin-top: 38rem;
+            margin-bottom: 10rem;
         }
         .sale-container .subtitle h3 {
             font-size: 20px;
@@ -584,8 +585,8 @@
             padding: 0px 10px 5px 10px;
         }
         .sale-container .sales .sale-1 #middle {
-            margin-top: 4rem;
-            margin-bottom: 4rem;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
         }
         .sale-container .sales .sale-1 .sale-image a,
         .sale-container .sales .sale-1 .sale-image1 a {
@@ -594,7 +595,7 @@
         }
         /* FOOTER */
         footer {
-            height: 55vh;
+            height: 50vh;
         }
         footer .foot-container {
             padding-top: 20px;
@@ -608,7 +609,7 @@
             font-size: 10px;
         }
         footer .foot-container .channels {
-            margin-top: 1.5rem;
+            margin-top: 1rem;
         }
         footer .foot-container .channels img {
             width: 2%;
