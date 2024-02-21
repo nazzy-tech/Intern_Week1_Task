@@ -443,7 +443,7 @@
     }
     /* Media Query*/
     
-    @media only screen and (max-width: 1024px) {
+    @media only screen and (max-width: 1200px) {
         .btn-menu {
             display: block;
         }
@@ -556,7 +556,7 @@
         }
         /* SALES */
         .sale-container {
-            height: 70vh;
+            height: 200vh;
             margin-top: 38rem;
         }
         .sale-container .subtitle h3 {
@@ -564,10 +564,12 @@
         }
         .sale-container .sales {
             margin-top: 1.5rem;
+            display: block;
+            justify-content: space-around;
         }
         .sale-container .sales .sale-1 .sale-image,
         .sale-container .sales .sale-1 .sale-image1 {
-            width: 70%;
+            width: 50%;
             height: 330px;
         }
         .sale-container .sales .sale-1 .sale-image h5,
@@ -578,12 +580,17 @@
         }
         .sale-container .sales .sale-1 .sale-image p,
         .sale-container .sales .sale-1 .sale-image1 p {
-            font-size: 10px;
+            font-size: 12px;
             padding: 0px 10px 5px 10px;
+        }
+        .sale-container .sales .sale-1 #middle {
+            margin-top: 4rem;
+            margin-bottom: 4rem;
         }
         .sale-container .sales .sale-1 .sale-image a,
         .sale-container .sales .sale-1 .sale-image1 a {
-            font-size: 10px;
+            font-size: 12px;
+            margin-top: -10px;
         }
         /* FOOTER */
         footer {

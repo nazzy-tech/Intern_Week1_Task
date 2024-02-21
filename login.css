@@ -131,18 +131,36 @@ form .error .display-error {
 
 /* Media Query*/
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1200px) {
+    body {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-self: center;
+        align-items: center;
+        background: linear-gradient(179.84deg, #82D4C9 -158.45%, rgba(130, 212, 201, 0) 104.55%);
+    }
+    .login-container {
+        width: 80%;
+        margin: auto;
+    }
     .login-container fieldset {
         width: 100%;
-        height: 50vh;
+        height: 65vh;
+        border-radius: 7px;
+        position: relative;
+        display: flex;
+        justify-self: center;
+        align-items: center;
     }
     .login-container fieldset legend {
         font-size: 30px;
     }
     .login-container fieldset form {
-        width: 50%;
+        width: 80%;
+        margin: auto;
     }
     .login-container fieldset form input {
-        padding: 10px 50px;
+        padding: 12px 85px;
     }
 }
